@@ -1,0 +1,10 @@
+.parent{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+.parent.button {
+    width: 10em;
+    height:3em;
+  }
+  
