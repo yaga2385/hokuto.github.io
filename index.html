@@ -348,7 +348,7 @@
         var msg = textBox.value + "持ﾒ";
         textBox.value = msg;
     }
-    function AddMessageTousi(){
+    function AddMessageTousi1(){
         var textBox = document.getElementById("AT");
         var msg = textBox.value + "投資";
         textBox.value = msg;
@@ -416,14 +416,15 @@
 </head>
 <body>
     <header>
-        <h5>スマスロ北斗台メモ</h5>
+        <h3>スマスロ北斗台メモ</h3>
+        
     </header>
     <main>
         <div class ="parent">
         <section class="1">
         <input type="button" value="現在時刻" onclick="AddMessageTime()"/>
         <br/>
-        <h5>台メモ</h5>
+        <h3>台メモ</h3>
         <br>
             <input type="button" value="1" onclick="AddMessage1()">
             <input type="button" value="2" onclick="AddMessage2()">
@@ -471,7 +472,7 @@
             <input type="button" value="8" onclick="AddMessage8A()">
             <input type="button" value="9" onclick="AddMessage9A()">
             <br>
-            <input type="button" value="投" onclick ="AddMessageTousi()">
+            <input type="button" value="投" onclick ="AddMessageTousi1()">
             <input type="button" value="0" onclick="AddMessage0A()">
             <input type="button" value="k" onclick="AddMessageK()">
             <br>
@@ -545,11 +546,11 @@
         <section class = "final">
             <input type="button" value="コピー" onclick="CopyDo1()">
             <br>
-            <textarea name="出力" id="AT" cols="20" rows="1"></textarea>
+            <textarea name="出力" id="AT" cols="25" rows="1"></textarea>
             <br>
             <input type="button" value="コピー" onclick="CopyDo()">
             <br>
-            <textarea name="出力" id="final" cols="20" rows="30"></textarea>
+            <textarea name="出力" id="final" cols="25" rows="30"></textarea>
             
         </section>
         </div>
