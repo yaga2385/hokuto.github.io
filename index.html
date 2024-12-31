@@ -190,12 +190,17 @@
     }
     function AddMessageHeven1(){
         var textBox = document.getElementById("final");
-        var msg = textBox.value + "天国❗️" + "\n";
+        var msg = textBox.value + "天国❗" + "\n";
         textBox.value = msg;
     }
     function AddMessageUnderNomal1(){
         var textBox = document.getElementById("final");
         var msg = textBox.value + "通常以下" + "\n";
+        textBox.value = msg;
+    }
+    function AddMessageHumei(){
+        var textBox = document.getElementById("final");
+        var msg = textBox.value + "不明" + "\n";
         textBox.value = msg;
     }
     function AddMessageHell2(){
@@ -216,6 +221,11 @@
     function AddMessageUnderNomal2(){
         var textBox = document.getElementById("final");
         var msg = textBox.value + "通常以下 ";
+        textBox.value = msg;
+    }
+    function AddMessageHumei1(){
+        var textBox = document.getElementById("final");
+        var msg = textBox.value + "不明 ";
         textBox.value = msg;
     }
     function AddMessageCherry1(){
@@ -368,13 +378,13 @@
         var msg = textBox.value + "回収";
         textBox.value = msg;
     }
+    function AddMessageOr(){
+        var textBox = document.getElementById("final");
+        var msg = textBox.value + "or ";
+        textBox.value = msg;
+    }
     function CopyDo(){
         var textBox = document.getElementById("final");
-        textBox.select();
-        document.execCommand("Copy");
-    }
-    function CopyDo1(){
-        var textBox = document.getElementById("AT");
         textBox.select();
         document.execCommand("Copy");
     }
@@ -489,12 +499,14 @@
             <input type="button" value="通常" onclick="AddMessageNomal1()">
             <input type="button" value="天国" onclick="AddMessageHeven1()">
             <input type="button" value="通常以下" onclick="AddMessageUnderNomal1()">
+            <input type="button" value="不明" onclick="AddMessageHumei()">
         
             <h5>ボーナス突入時</h5>
             <input type="button" value="地獄" onclick="AddMessageHell2()">
             <input type="button" value="通常" onclick="AddMessageNomal2()">
             <input type="button" value="天国" onclick="AddMessageHeven2()">
             <input type="button" value="通常以下" onclick="AddMessageUnderNomal2()">
+            <input type="button" value="不明" onclick="AddMessageHumei2()">
         
             <h5>役</h5>
             <input type="button" value="中ﾁｪ" onclick="AddMessageCherry1()">
@@ -506,16 +518,10 @@
             <input type="button" value="確定役" onclick="AddMessageReach()">
             <input type="button" value="仮天" onclick="AddMessageInterim()">
             <input type="button" value="謎" onclick="AddMessageMystery()">
+            <input type="button" value="or" onclick="AddMessageOr()">
             <br>
             <input type="button" value="本前兆" onclick="AddMessageHon()">
-            <h3>トロフィー</h3>
-            <input type="button" value="金ﾄﾛ" onclick="AddMessageGold()">
-            <input type="button" value="ｷﾘﾝﾄﾛ" onclick="AddMessageKirin()">
-            <input type="button" value="虹ﾄﾛ" onclick="AddMessageRain()">
-            <br>
-            <input type="button" value="初代" onclick="AddMessageFirst()">
-            <input type="button" value="456枚" onclick="AddMessage456()">
-            <input type="button" value="666枚" onclick="AddMessage666()">
+            
         
             <h3>ボイス</h3>
             <input type="button" value="ﾘﾝ" onclick="AddMessageRin()">
@@ -529,6 +535,26 @@
             <input type="button" value="ｹﾝ" onclick="AddMessageKenA()">
             <input type="button" value="ﾕﾘｱ" onclick="AddMessageYuria()">
             <input type="button" value="ｹﾝ(1G)" onclick="AddMessageKenB()">
+            
+
+        </section>
+        <section class = "final">
+            <input type="button" value="コピー" onclick="CopyDo1()">
+            <br>
+            <textarea name="出力" id="AT" cols="25" rows="1"></textarea>
+            <br>
+            <input type="button" value="コピー" onclick="CopyDo()">
+            <br>
+            <textarea name="出力" id="final" cols="25" rows="30"></textarea>
+            <br>
+            <h3>トロフィー</h3>
+            <input type="button" value="金ﾄﾛ" onclick="AddMessageGold()">
+            <input type="button" value="ｷﾘﾝﾄﾛ" onclick="AddMessageKirin()">
+            <input type="button" value="虹ﾄﾛ" onclick="AddMessageRain()">
+            <br>
+            <input type="button" value="初代" onclick="AddMessageFirst()">
+            <input type="button" value="456枚" onclick="AddMessage456()">
+            <input type="button" value="666枚" onclick="AddMessage666()">
             <br>
             <h3>
                 その他
@@ -545,17 +571,6 @@
             <br>
             <input type="button" value="+" onclick="AddMessagePlus()">
             <input type="button" value="-" onclick="AddMessageMinus()">
-
-
-        </section>
-        <section class = "final">
-            <input type="button" value="コピー" onclick="CopyDo1()">
-            <br>
-            <textarea name="出力" id="AT" cols="25" rows="1"></textarea>
-            <br>
-            <input type="button" value="コピー" onclick="CopyDo()">
-            <br>
-            <textarea name="出力" id="final" cols="25" rows="30"></textarea>
             
         </section>
         </div>
