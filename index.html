@@ -9,9 +9,9 @@
         var date = realDate.getDate()
         var dayOfWeek = realDate.getDay();
         const dayOfWeekStr = ['日', '月', '火', '水', '木', '金', '土'][dayOfWeek];
-        var msg = textBox.value + month + "/" + date + "("+ dayOfWeekStr+")" +"\n" + "抽選";
+        var msg = textBox.value + month + "/" + date + "("+ dayOfWeekStr+")" +"\n" + "抽選-番"+"\n"+"スマスロ北斗28--（第-候補）"+"\n"+"マイスロ 済み"+"\n"+"貯メ-枚"+"\n"+"\n";
         textBox.value=msg;}
-        
+    
     function AddMessage1(){
         var textBox = document.getElementById("final");
         var msg = textBox.value + "1";
@@ -437,7 +437,7 @@
     <main>
         <div class ="parent">
         <section class="1">
-        <input type="button" value="現在時刻" onclick="AddMessageTime()"/>
+        <input type="button" value="スタート" onclick="AddMessageTime()"/>
         <br/>
         <h3>台メモ</h3>
         <br>
