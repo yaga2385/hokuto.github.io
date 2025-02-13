@@ -9,5 +9,5 @@
   }
 
 .wrap{
-    touch-action: manipulation;
+    touch-action: none;
 }
