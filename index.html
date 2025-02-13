@@ -9,9 +9,9 @@
         var date = realDate.getDate()
         var dayOfWeek = realDate.getDay();
         const dayOfWeekStr = ['日', '月', '火', '水', '木', '金', '土'][dayOfWeek];
-        var msg = textBox.value + month + "/" + date + "("+ dayOfWeekStr+")" +"\n" + "抽選-番"+"\n"+"スマスロ北斗28--（第-候補）"+"\n"+"マイスロ 済み"+"\n"+"貯メ-枚"+"\n"+"\n";
+        var msg = textBox.value + month + "/" + date + "("+ dayOfWeekStr+")" +"\n" + "抽選";
         textBox.value=msg;}
-    
+        
     function AddMessage1(){
         var textBox = document.getElementById("final");
         var msg = textBox.value + "1";
@@ -437,7 +437,7 @@
     <main>
         <div class ="parent">
         <section class="1">
-        <input type="button" value="スタート" onclick="AddMessageTime()"/>
+        <input type="button" value="現在時刻" onclick="AddMessageTime()"/>
         <br/>
         <h3>台メモ</h3>
         <br>
@@ -458,7 +458,41 @@
             <input type="button" value="連" onclick="AddMessageRen()">
             <br>
             <input type="button" value="g" onclick="AddMessageG()">
+        
             
+            <br>
+            <input type="button" value="抽選番号" onclick="AddMessageSelect()">
+            <br>
+            <input type="button" value="第1候補" onclick="AddMessageNo1()">
+            <br>
+            <input type="button" value="第2候補" onclick="AddMessageNo2()">
+            <br>
+            <input type="button" value="第3候補" onclick="AddMessageNo3()">
+            <br>
+            <input type="button" value="その他" onclick="AddMessageOther()">
+        
+            <input type="button" value="マイスロ" onclick="AddMessageMySlot()">
+            <br>
+            ボーナス確定画面
+            <br>
+            <input type="button" value="1" onclick="AddMessage1A()">
+            <input type="button" value="2" onclick="AddMessage2A()">
+            <input type="button" value="3" onclick="AddMessage3A()">
+            <br>
+            <input type="button" value="4" onclick="AddMessage4A()">
+            <input type="button" value="5" onclick="AddMessage5A()">
+            <input type="button" value="6" onclick="AddMessage6A()">
+            <br>
+            <input type="button" value="7" onclick="AddMessage7A()">
+            <input type="button" value="8" onclick="AddMessage8A()">
+            <input type="button" value="9" onclick="AddMessage9A()">
+            <br>
+            <input type="button" value="投" onclick ="AddMessageTousi1()">
+            <input type="button" value="0" onclick="AddMessage0A()">
+            <input type="button" value="k" onclick="AddMessageK()">
+            <br>
+            <input type="button" value="AT" onclick="AddMessageAT()">
+            <input type="button" value="g" onclick="AddMessagegA()">
         
             <h5>初期状態、AT後状態</h5>
             <input type="button" value="地獄" onclick="AddMessageHell1()">
@@ -505,7 +539,10 @@
 
         </section>
         <section class = "final">
-            
+            <input type="button" value="コピー" onclick="CopyDo1()">
+            <br>
+            <textarea name="出力" id="AT" cols="25" rows="1"></textarea>
+            <br>
             <input type="button" value="コピー" onclick="CopyDo()">
             <br>
             <textarea name="出力" id="final" cols="25" rows="30"></textarea>
